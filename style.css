@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #87CEEB; /* Default background color (Sky Blue) */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 400px; /* Set max-width for responsiveness */
+    width: 90%; /* Set a relative width */
+}
+
+#weather-container {
+    margin-top: 20px;
+    transition: margin-top 0.5s ease-in-out;
+}
+
+#weather-info {
+    font-size: 1.2em; /* Use relative font size */
+}
+
+#weather-icon img {
+    max-width: 100%;
+    margin-top: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+#manual-input {
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 1em; /* Use relative font size */
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* Use relative font size */
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #f3f3f3;
+    }
+    100% {
+        background-color: #87CEEB; /* Sky Blue */
+    }
+}
+
+@keyframes changeBoxShadow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes changeMarginTop {
+    0% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes spinIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
